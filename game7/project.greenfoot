@@ -1,22 +1,16 @@
 #Greenfoot project file
-<<<<<<< HEAD
-class.x.image=bee.png
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=100
-=======
 class.C.image=sheep.png
 class.D.image=castle.png
+class.MyWorld.image=bg_uchu_space.jpg
 class.hune.image=boat01-f.png
+class.x.image=bee.png
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
->>>>>>> 92aa90924e7a1c71a04d02e88bfc288faac2ea58
 height=585
 package.numDependencies=0
-package.numTargets=4
+package.numTargets=5
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -32,11 +26,7 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
-<<<<<<< HEAD
-target1.name=x
-=======
 target1.name=C
->>>>>>> 92aa90924e7a1c71a04d02e88bfc288faac2ea58
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
@@ -57,19 +47,21 @@ target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-target4.name=MyWorld
+target4.name=x
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
+target5.height=50
+target5.name=MyWorld
+target5.showInterface=false
+target5.type=ClassTarget
+target5.width=80
+target5.x=0
+target5.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=124
-yPosition=175
-=======
-xPosition=874
-yPosition=449
->>>>>>> 92aa90924e7a1c71a04d02e88bfc288faac2ea58
+xPosition=117
+yPosition=314

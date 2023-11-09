@@ -14,22 +14,6 @@ public class SOUJIKI extends Actor
      */
     public void act() 
     {
-        
-        if( Greenfoot.isKeyDown( "right" ) ){
-        setRotation(0);
-        move(4);
-        }
-        if( Greenfoot.isKeyDown( "down" ) ){
-        setRotation(90);
-        move(4);
-        }
-        if( Greenfoot.isKeyDown( "left" ) ){
-        setRotation(180);
-        move(4);
-        }
-        if( Greenfoot.isKeyDown( "up" ) ){
-        setRotation(-90);
-        move(4);
-        }// Add your action code here.
+        getImage().scale( 10, 10 );
     }    
 }

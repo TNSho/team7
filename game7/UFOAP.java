@@ -14,6 +14,6 @@ public class UFOAP extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        move(-1);// Add your action code here.
     }    
 }

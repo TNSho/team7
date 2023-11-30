@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class SOUJIKI extends Actor
 {
+    private int dangan;
     /**
      * Act - do whatever the SOUJIKI wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -15,24 +16,29 @@ public class SOUJIKI extends Actor
     public void act() 
     {
 
-        if( Greenfoot.isKeyDown( "right" ) ){
-        setRotation(0);
-        move(4);
-        }
-        if( Greenfoot.isKeyDown( "down" ) ){
-        setRotation(90);
-        move(4);
-        }
+        int x = getX();
+        int y = getY();
         if( Greenfoot.isKeyDown( "left" ) ){
-        setRotation(0);
-        move(-4);
+           setLocation( x-4,y );
+        }
+        if( Greenfoot.isKeyDown( "right" ) ){
+           setLocation( x+4,y );
         }
         if( Greenfoot.isKeyDown( "up" ) ){
-        setRotation(-90);
-        move(4);
+           setLocation( x,y-4 );
+        }
+        if( Greenfoot.isKeyDown( "down" ) ){
+           setLocation( x,y+4 );
+        }
+        Actor gomi = getOneIntersectingObject( GOMI.class );
+        Actor hune = getOneIntersectingObject( hune.class );
+        if(gomi != null){
+            getWorld().removeObject( gomi );
+            dangan++; 
         }  
-    }     
+        if(dangan == 10){
+        }
 
     }   
 
-
+}

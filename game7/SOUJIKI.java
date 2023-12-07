@@ -19,31 +19,31 @@ public class SOUJIKI extends Actor
         int x = getX();
         int y = getY();
         
-        
-        if( Greenfoot.isKeyDown( "right" ) ){
-        setLocation( x+1,y );
-        }
         if( Greenfoot.isKeyDown( "left" ) ){
-           setLocation( x-4,y );
+           setLocation( x-1,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
-           setLocation( x+4,y );
+           setLocation( x+1,y );
         }
         if( Greenfoot.isKeyDown( "up" ) ){
-           setLocation( x,y-4 );
+           setLocation( x,y-1 );
         }
         if( Greenfoot.isKeyDown( "down" ) ){
-           setLocation( x,y+4 );
+           setLocation( x,y+1 );
         }
         Actor gomi = getOneIntersectingObject( GOMI.class );
-        Actor hune = getOneIntersectingObject( hune.class );
         if(gomi != null){
             getWorld().removeObject( gomi );
             dangan++; 
         }  
         if(dangan == 10){
         }
-
+        
+        Actor UFOAP = getOneIntersectingObject(UFOAP.class);
+        if(UFOAP != null){
+            getWorld().showText("GAME OVER", 325, 200);
+            Greenfoot.stop();
+        }
     }   
 
 }

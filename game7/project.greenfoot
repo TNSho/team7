@@ -7,7 +7,6 @@ class.MyWorld.image=bg_uchu_space.jpg
 class.SOUJIKI.image=SOUJIKI.png
 class.UFOAP.image=UFOAP.png
 class.hune.image=boat01-f.png
-class.x.image=bee.png
 dependency1.from=MyWorld
 dependency1.to=SOUJIKI
 dependency1.type=UsesDependency
@@ -22,19 +21,11 @@ dependency4.to=GOMI
 dependency4.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
-<<<<<<< HEAD
-editor.fx.0.x=1039
-editor.fx.0.y=137
-height=1056
-package.numDependencies=4
-package.numTargets=8
-=======
 editor.fx.0.x=647
 editor.fx.0.y=98
 height=588
-package.numDependencies=3
-package.numTargets=9
->>>>>>> 4f08c05453e1d4cef4f60575ace8006513083872
+package.numDependencies=4
+package.numTargets=8
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -99,26 +90,14 @@ target7.width=80
 target7.x=0
 target7.y=0
 target8.height=50
-target8.name=x
+target8.name=MyWorld
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=80
 target8.x=0
 target8.y=0
-target9.height=50
-target9.name=MyWorld
-target9.showInterface=false
-target9.type=ClassTarget
-target9.width=80
-target9.x=0
-target9.y=0
 version=3.0.0
 width=944
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=0
-yPosition=235
-=======
 xPosition=700
 yPosition=303
->>>>>>> 4f08c05453e1d4cef4f60575ace8006513083872

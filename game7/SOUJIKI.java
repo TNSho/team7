@@ -18,18 +18,11 @@ public class SOUJIKI extends Actor
 
         int x = getX();
         int y = getY();
-<<<<<<< HEAD
-=======
         
         
         if( Greenfoot.isKeyDown( "right" ) ){
         setLocation( x+1,y );
         }
-        if( Greenfoot.isKeyDown( "down" ) ){
-        setRotation(90);
-        move(4);
-        }
->>>>>>> 4f08c05453e1d4cef4f60575ace8006513083872
         if( Greenfoot.isKeyDown( "left" ) ){
            setLocation( x-4,y );
         }

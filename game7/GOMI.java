@@ -26,7 +26,6 @@ public class GOMI extends Actor
     }
     public void act() 
     {
-<<<<<<< HEAD
         gerak();
         if (kuat == 0)
         {
@@ -38,10 +37,7 @@ public class GOMI extends Actor
             getWorld().addObject(new GOMI(), getX()+50, getY());
         if (jeda == 0)
             jeda = 115;
-        // Add your action code here.
-=======
-        
->>>>>>> 4f08c05453e1d4cef4f60575ace8006513083872
+
     }    
     public void setBisaTembak(boolean value)
     {

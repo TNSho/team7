@@ -15,6 +15,7 @@ public class SOUJIKI extends Actor
      */
     public void act() 
     {
+        getImage().scale( 80, 60 );
 
         int x = getX();
         int y = getY();

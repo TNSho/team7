@@ -20,8 +20,7 @@ public class MyWorld extends World
         super(650, 400, 1);
         
         addObject( new SOUJIKI(), 100, 200);
-        addObject( new UFOAP(), 600, 250);
-        for(int i=0;i<5;i++){
+        for(int i=0;i<1;i++){
             int A = 0;
             int B = 800;
             int x = A + (int)(Math.random()*((B-A)+1));
@@ -29,11 +28,27 @@ public class MyWorld extends World
             B = 450;
             int y = A + (int)(Math.random()*((B-A)+1));
             
-            if(x < 500)
+            if(x < 600)
             {
-                x = 500;
+                x = 600;
+            }
+            addObject(new UFOAP(), x, y);
+            
+        }
+        for(int i=0;i<10;i++){
+            int A = 0;
+            int B = 800;
+            int x = A + (int)(Math.random()*((B-A)+1));
+            A = 0;
+            B = 450;
+            int y = A + (int)(Math.random()*((B-A)+1));
+            
+            if(x < 600)
+            {
+                x = 600;
             }
             addObject(new GOMI(), x, y);
+            
         }
     }
 

@@ -9,6 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class SOUJIKI extends Actor
 {
     private int dangan;
+    
+    private boolean flag_tama = false;
     /**
      * Act - do whatever the SOUJIKI wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -45,6 +47,16 @@ public class SOUJIKI extends Actor
             getWorld().showText("GAME OVER", 325, 200);
             Greenfoot.stop();
         }
+        
+        
+        if( Greenfoot.isKeyDown( "space" ) ){
+            if( flag_tama == false ){
+                getWorld().addObject( new GOMI2(), getX(), getY() );
+                flag_tama = true;
+            }
+        }  
+        else flag_tama = false;
     }   
+   
 
 }

@@ -31,7 +31,6 @@ public class GOMI extends Actor
                     x = 600;
                 }
                 setLocation(x, y);
-                
             }
         }
 

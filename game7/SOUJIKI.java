@@ -23,16 +23,16 @@ public class SOUJIKI extends Actor
         int y = getY();
         
         if( Greenfoot.isKeyDown( "left" ) ){
-           setLocation( x-3,y );
+           setLocation( x-5,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
-           setLocation( x+3,y );
+           setLocation( x+5,y );
         }
         if( Greenfoot.isKeyDown( "up" ) ){
-           setLocation( x,y-3 );
+           setLocation( x,y-5 );
         }
         if( Greenfoot.isKeyDown( "down" ) ){
-           setLocation( x,y+3 );
+           setLocation( x,y+5 );
         }
         Actor gomi = getOneIntersectingObject( GOMI.class );
         if(gomi != null){
@@ -40,6 +40,14 @@ public class SOUJIKI extends Actor
             dangan++; 
         }  
         if(dangan == 10){
+            if( Greenfoot.isKeyDown( "space" ) ){
+            if( flag_tama == false ){
+                getWorld().addObject( new GOMI2(), getX(), getY() );
+                flag_tama = true;
+            }
+            dangan = 0;
+        }  
+        else flag_tama = false;
         }
         
         Actor UFOAP = getOneIntersectingObject(UFOAP.class);
@@ -47,15 +55,8 @@ public class SOUJIKI extends Actor
             getWorld().showText("GAME OVER", 325, 200);
             Greenfoot.stop();
         }
+
         
-        
-        if( Greenfoot.isKeyDown( "space" ) ){
-            if( flag_tama == false ){
-                getWorld().addObject( new GOMI2(), getX(), getY() );
-                flag_tama = true;
-            }
-        }  
-        else flag_tama = false;
     }   
    
 

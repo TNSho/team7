@@ -11,24 +11,24 @@ public class UFOAP extends Actor
     public void act() 
     {
         move(-1);
-        if(isAtEdge()){
-            for(int i=0;i<10;i++){
-                int A = 0;
-                int B = 800;
-                int x = A + (int)(Math.random()*((B-A)+1));
-                A = 0;
-                B = 450;
-                int y = A + (int)(Math.random()*((B-A)+1));
-                
-                if(x < 600){
-                    x = 600;
-                }
-                if(y < 100 && y > 700){
-                    y = 400;
-                }
-                setLocation(x, y);
-                
+        Actor gomi2 = getOneIntersectingObject(GOMI2.class);
+        if(isAtEdge() || gomi2 != null){
+            getWorld().addObject( new UFOAP(), 300, 200 );
+            int A = 0;
+            int B = 800;
+            int x = A + (int)(Math.random()*((B-A)+1));
+            A = 0;
+            B = 450;
+            int y = A + (int)(Math.random()*((B-A)+1));
+            if(x < 600){
+                x = 600;
             }
+            if(y < 100 && y > 700){
+                y = 400;
+            }
+            setLocation(x, y);
         }
+        
     }
+        
 }

@@ -23,16 +23,16 @@ public class SOUJIKI extends Actor
         int y = getY();
         
         if( Greenfoot.isKeyDown( "left" ) ){
-           setLocation( x-1,y );
+           setLocation( x-3,y );
         }
         if( Greenfoot.isKeyDown( "right" ) ){
-           setLocation( x+1,y );
+           setLocation( x+3,y );
         }
         if( Greenfoot.isKeyDown( "up" ) ){
-           setLocation( x,y-1 );
+           setLocation( x,y-3 );
         }
         if( Greenfoot.isKeyDown( "down" ) ){
-           setLocation( x,y+1 );
+           setLocation( x,y+3 );
         }
         Actor gomi = getOneIntersectingObject( GOMI.class );
         if(gomi != null){

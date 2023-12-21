@@ -16,11 +16,15 @@ public class GOMI2 extends Actor
     {
         // Add your action code here.
         getImage().scale( 50, 50 );
-        move(2);
+        move(9);
         
         Actor UFOAP = getOneIntersectingObject(UFOAP.class);
         if(UFOAP != null){
             getWorld().removeObject( UFOAP );
+            getWorld().removeObject( this );
+            return;
+        }
+        if(isAtEdge()){
             getWorld().removeObject( this );
         }
     }    

@@ -10,18 +10,17 @@ public class UFOAP extends Actor
 {
     public void act() 
     {
-        move(-1);
+        move(-6);
         Actor gomi2 = getOneIntersectingObject(GOMI2.class);
-        if(isAtEdge() || gomi2 != null){
-            getWorld().addObject( new UFOAP(), 300, 200 );
+        if(isAtEdge()){
             int A = 0;
             int B = 800;
             int x = A + (int)(Math.random()*((B-A)+1));
             A = 0;
             B = 450;
             int y = A + (int)(Math.random()*((B-A)+1));
-            if(x < 600){
-                x = 600;
+            if(x < 800){
+                x = 800;
             }
             if(y < 100 && y > 700){
                 y = 400;

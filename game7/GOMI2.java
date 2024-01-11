@@ -20,8 +20,10 @@ public class GOMI2 extends Actor
         
         Actor UFOAP = getOneIntersectingObject(UFOAP.class);
         if(UFOAP != null){
-            getWorld().removeObject( UFOAP );
-            getWorld().removeObject( this );
+            //getWorld().removeObject( UFOAP );
+            //getWorld().removeObject( this );
+            getWorld().showText("YOU WIN", 325, 200);
+            Greenfoot.stop();
             return;
         }
         if(isAtEdge()){

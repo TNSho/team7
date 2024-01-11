@@ -40,11 +40,13 @@ public class SOUJIKI extends Actor
             dangan++; 
         }  
         if(dangan == 10){
+            getWorld().showText("発射準備完了",325,50);
             if( Greenfoot.isKeyDown( "space" ) ){
             if( flag_tama == false ){
                 getWorld().addObject( new GOMI2(), getX(), getY() );
                 flag_tama = true;
             }
+            
             dangan = 0;
         }  
         else flag_tama = false;

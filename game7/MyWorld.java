@@ -21,15 +21,15 @@ public class MyWorld extends World
         addObject( new SOUJIKI(), 100, 200);
         for(int i=0;i<1;i++){
             int A = 0;
-            int B = 800;
+            int B = 1200;
             int x = A + (int)(Math.random()*((B-A)+1));
             A = 0;
-            B = 450;
+            B = 1500;
             int y = A + (int)(Math.random()*((B-A)+1));
             
-            if(x < 600)
+            if(x < 1000)
             {
-                x = 600;
+                x = 1000;
             }
             addObject(new UFOAP(), x, y);
             
@@ -42,9 +42,9 @@ public class MyWorld extends World
             B = 450;
             int y = A + (int)(Math.random()*((B-A)+1));
             
-            if(x < 600)
+            if(x < 570)
             {
-                x = 600;
+                x = 570;
             }
             addObject(new GOMI(), x, y);
             

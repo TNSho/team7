@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class GOMI extends Actor
 {
+    
     /**
      * Act - do whatever the GOMI wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,6 +18,7 @@ public class GOMI extends Actor
     {
         getImage().scale( 50, 50 );
         move(-10);
+        
         if(isAtEdge()){
             for(int i=0;i<10;i++){
             int A = 0;
@@ -26,13 +28,13 @@ public class GOMI extends Actor
             B = 450;
             int y = A + (int)(Math.random()*((B-A)+1));
             
-            if(x < 600)
-            {
-                x = 600;
-            }
+                if(x < 600)
+                {
+                    x = 600;
+                }
             setLocation(x, y);
             
-        }
+        }   
            
         }
     }

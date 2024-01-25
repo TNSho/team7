@@ -10,7 +10,7 @@ public class UFOAP extends Actor
 {
     public void act() 
     {
-            move(-12);
+            move(-6);
             Actor gomi2 = getOneIntersectingObject(GOMI2.class);
             if(isAtEdge()){
                 int A = 0;
